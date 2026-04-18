@@ -428,9 +428,9 @@ li.toc-item-date::marker {
 @media (prefers-color-scheme: dark) {
 
     .card.radiobutton {
-        border-color: var(--border-light);
-        background-color: var(--surface-canvas-light);
-        color: var(--text-light);
+        border-color: var(--border-dark);
+        background-color: var(--surface-canvas-dark);
+        color: var(--text-dark);
     }
 
     .color.accent.auto {
