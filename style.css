@@ -425,7 +425,33 @@ li.toc-item-date::marker {
     box-shadow: inset 0 0 0 0 var(--highlight-light);
 }
 
-html.theme-dark {
+@media (prefers-color-scheme: dark) {
+
+    .card.radiobutton {
+        border-color: var(--border-light);
+        background-color: var(--surface-canvas-light);
+        color: var(--text-light);
+    }
+
+    .color.accent.auto {
+            background-color: var(--accent-dark);
+    }
+        .color.border.auto {
+            background-color: var(--border-dark);
+    }
+        .color.highlight.auto {
+            background-color: var(--highlight-dark);
+    }
+        .color.interactive.auto {
+            background-color: var(--interactive-dark);
+    }
+        .color.text.auto {
+            background-color: var(--text-dark);
+    }
+
+}
+
+    html.theme-dark {
 
     /* a tag underline removal */
 
@@ -469,7 +495,6 @@ html.theme-dark {
 
     /* accent */
 
-    .color.accent.auto,
     .section.hero,
     .breadcrumb-bar-color,
     .card.media,
@@ -479,10 +504,6 @@ html.theme-dark {
     }
 
     /* border */
-
-    .color.border.auto {
-        background-color: var(--border-dark);
-    }
 
     hr,
     .card,
@@ -500,10 +521,6 @@ html.theme-dark {
 
     /* text */
 
-    .color.text.auto {
-        background-color: var(--text-dark);
-    }
-
     body,
     h1,
     .input-field,
@@ -516,7 +533,6 @@ html.theme-dark {
 
     /* interactive */
 
-    .color.interactive.auto,
     .w-slider-dot,
     .w-slider-dot.w-active,
     .link-overlay::before {
@@ -573,7 +589,6 @@ html.theme-dark {
 
     /* highlight */
 
-    .color.highlight.auto,
     .text-highlight,
     .w-slider-dot.w-active {
         background-color: var(--highlight-dark);
