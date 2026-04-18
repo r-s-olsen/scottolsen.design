@@ -1,0 +1,287 @@
+/* auto theme card */
+
+@media (prefers-color-scheme: dark) {
+
+    .card.radiobutton.auto {
+        border-color: var(--border-dark);
+        background-color: var(--surface-canvas-dark);
+        color: var(--text-dark);
+    }
+
+    .color.accent.auto {
+            background-color: var(--accent-dark);
+    }
+        .color.border.auto {
+            background-color: var(--border-dark);
+    }
+        .color.highlight.auto {
+            background-color: var(--highlight-dark);
+    }
+        .color.interactive.auto {
+            background-color: var(--interactive-dark);
+    }
+        .color.text.auto {
+            background-color: var(--text-dark);
+    }
+
+}
+
+html.theme-dark {
+
+    /* a tag underline removal */
+
+    .toc-link:hover,
+    .toc-link:active,
+    .toc-link:focus,
+    .button:hover {
+        box-shadow: none;
+    }
+
+    /* text selection */
+
+    ::selection {
+        color: var(--surface-canvas-dark);
+        background-color: var(--highlight-dark);
+    }
+
+    ::-moz-selection {
+        color: var(--surface-canvas-dark);
+        background-color: var(--highlight-dark);
+    }
+
+    /* surface-canvas */
+
+    body,
+    .button,
+    .card,
+    .drawer-content,
+    .nav-content,
+    .w-lightbox-close::before,
+    .w-lightbox-left::before,
+    .w-lightbox-right::before {
+        background-color: var(--surface-canvas-dark);
+    }
+
+    /* surface-canvas-translucent */
+
+    .slider-navigation-mask {
+        background-color: var(--surface-canvas-translucent-dark);
+    }
+
+    /* accent */
+
+    .section.hero,
+    .breadcrumb-bar-color,
+    .card.media,
+    .w-lightbox-caption,
+    .text-code	{
+        background-color: var(--accent-dark);
+    }
+
+    /* border */
+
+    hr,
+    .card,
+    .input-field,
+    .menu-header,
+    .menu-footer,
+    .nav-content,
+    .accordion-item {
+        border-color: var(--border-dark);
+    }
+
+    .ol-breadcrumbs li + li::before {
+        color: var(--border-dark);
+    }
+
+    /* text */
+
+    body,
+    h1,
+    .input-field,
+    .card-title,
+    .card-description,
+    .chip,
+    .paragraph-alert	{
+        color: var(--text-dark);
+    }
+
+    /* interactive */
+
+    .w-slider-dot,
+    .w-slider-dot.w-active,
+    .link-overlay::before {
+        background-color: var(--interactive-dark);
+    }
+
+    a,
+    .button,
+    .w-lightbox-control {
+        color: var(--interactive-dark);
+    }
+
+    .button,
+    .lightbox-gallery,
+    .w-lightbox-close::before,
+    .w-lightbox-left::before,
+    .w-lightbox-right::before {
+        border-color: var(--interactive-dark);
+    }
+
+    a.link-external:after {
+        content: url("data:image/svg+xml;charset=UTF-8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23fd4873' fill-rule='evenodd' d='M5 5V19H19V12H21V19C21 20.1 20.1 21 19 21H5C3.89 21 3 20.1 3 19V5C3 3.9 3.89 3 5 3H12V5H5ZM14 5V3H21V10H19V6.41L9.17 16.24L7.76 14.83L17.59 5H14Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+
+    }
+
+    .w-lightbox-close::before {
+        content: url("data:image/svg+xml;charset=UTF-8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23fd4873' fill-rule='evenodd' d='M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    .w-lightbox-left::before {
+        content: url("data:image/svg+xml;charset=UTF-8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23fd4873' fill-rule='evenodd' d='M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    .w-lightbox-right::before {
+        content: url("data:image/svg+xml;charset=UTF-8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23fd4873' fill-rule='evenodd' d='M9.99997 6L8.58997 7.41L13.17 12L8.58997 16.59L9.99997 18L16 12L9.99997 6Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    /* surface-interactive */
+
+    .lightbox-gallery,
+    .button:hover,
+    .button:focus,
+    .input-field:focus,
+    .accordion-trigger:hover,
+    .accordion-trigger:focus,
+    .slider-navigation:hover .button,
+    .slider-navigation:focus .button,
+    .w-lightbox-control:hover::before,
+    .w-lightbox-control:focus::before,
+    .card:hover .button,
+    .card:focus .button {
+        background-color: var(--surface-interactive-dark);
+    }
+
+    /* highlight */
+
+    .text-highlight,
+    .w-slider-dot.w-active {
+        background-color: var(--highlight-dark);
+    }
+
+    a {
+        box-shadow: inset 0 0 0 0 var(--highlight-dark);
+    }
+
+    a:hover,
+    a:focus {
+        box-shadow: inset 0 -4px 0 0 var(--highlight-dark);
+    }
+
+    a:active {
+        box-shadow: inset 0 0 0 0 var(--highlight-dark);
+    }
+
+    .toc-link .toc-label {
+        box-shadow: inset 0 0 0 0 var(--highlight-dark);
+    }
+
+    .toc-link:hover .toc-label,
+    .toc-link:focus .toc-label {
+        box-shadow: inset 0 -4px 0 0 var(--highlight-dark);
+    }
+
+    .toc-link:active .toc-label {
+        box-shadow: inset 0 0 0 0 var(--highlight-dark);
+    }
+
+    .w-lightbox-active {
+        box-shadow: 0 0 0 .125rem var(--highlight-dark);
+    }
+
+    /* info */
+
+    .card.alert.info,
+    .chip.info {
+        color: var(--info-dark);
+    }
+
+    /* surface-info */
+
+    .card.alert.info {
+        background-color: var(--surface-info-dark);
+    }
+
+    /* success */
+
+    .card.alert.success {
+        color: var(--succes-darks);
+    }
+
+    /* surface-success */
+
+    .card.alert.success {
+        background-color: var(--surface-success-dark);
+    }
+
+    /* warning */
+
+    .card.alert.warning {
+        color: var(--warning-dark);
+    }
+
+    /* surface-warning */
+
+    .card.alert.warning {
+        background-color: var(--surface-warning-dark);
+    }
+
+    /* danger */
+
+    .card.alert.danger {
+        color: var(--danger-dark);
+    }
+
+    /* surface-danger */
+    
+    .card.alert.danger {
+        background-color: var(--surface-danger-dark);
+    }
+
+    /* chip-designsystems */
+    
+    .chip.designsystems {
+        background-color: var(--chip-designsystems-dark);
+    }
+
+    /* chip-misc */
+    
+    .chip.misc {
+        background-color: var(--chip-misc-dark);
+    }
+
+    /* chip-personal */
+    
+    .chip.personal {
+        background-color: var(--chip-personal-dark);
+    }
+
+    /* chip-professional */
+    
+    .chip.professional {
+        background-color: var(--chip-professional-dark);
+    }
+
+    /* chip-uiux */
+
+    .chip.uiux {
+        background-color: var(--chip-uiux-dark);
+    }
+
+    /* chip-info */
+
+    .chip.info {
+        background-color: var(--surface-info-dark);
+    }
+
+}
