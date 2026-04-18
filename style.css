@@ -363,7 +363,6 @@ a.link-external:after {
     height: 100%;
     display: flex;
     overflow: auto;
-    overflow: overlay;
 }
 
 .w-lightbox-image {
@@ -425,9 +424,17 @@ li.toc-item-date::marker {
     box-shadow: inset 0 0 0 0 var(--highlight-light);
 }
 
+/* auto theme card */
+
+.card.radiobutton.auto {
+    border-color: var(--border-light);
+    background-color: var(--surface-canvas-light);
+    color: var(--text-light);
+}
+
 @media (prefers-color-scheme: dark) {
 
-    .card.radiobutton {
+    .card.radiobutton.auto {
         border-color: var(--border-dark);
         background-color: var(--surface-canvas-dark);
         color: var(--text-dark);
@@ -451,7 +458,7 @@ li.toc-item-date::marker {
 
 }
 
-    html.theme-dark {
+html.theme-dark {
 
     /* a tag underline removal */
 
